@@ -1,9 +1,10 @@
 
 var express = require("express");
 var path = require("path");
+var fs = require('fs');
 
 var app = express();
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json()); 
@@ -36,4 +37,5 @@ app.post("/api/notes", function(req, res) { });
 app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
   });
+
 
