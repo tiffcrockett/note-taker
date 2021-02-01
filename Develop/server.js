@@ -22,7 +22,12 @@ app.get("/notes", function(req, res) {
  
   
 app.get("/api/notes", function(req, res) { });
-    
+
+
+
+app.get("/api/notes/:id", function(req, res) { });
+
+
 
 app.post("/api/notes", function(req, res) { });
 
