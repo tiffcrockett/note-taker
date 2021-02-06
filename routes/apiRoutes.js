@@ -38,13 +38,13 @@ module.exports = function(app) {
    });
     
   app.delete('/api/notes/:id', checkNoteExists, (req, res) => {
-    const { id } = req.params;
-   
-    const noteIndex = note.findIndex(n => n.id == id);
-   
-    notes.splice(noteIndex, 1);
+    const { id } = req.params.id; 
+
+    const noteDataIndex = note.findIndex(n => n.id == id); 
+
+    noteData.splice(noteDataIndex, 1);
    
     return res.send();
     });
   }
-)} 
+)};
