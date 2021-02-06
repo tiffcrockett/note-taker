@@ -1,24 +1,40 @@
 var noteData = require("../data/db.json");
+const UUID = require("uuidjs");
+var path = require("path");
+const fs = require("fs");
 
-module.exports = function(app) {
+module.exports = function(app) { 
 
-  
+  //returns contents of noteData back to the client
   app.get("/api/notes", function(req, res) {
+    res.json(noteData); 
 
-    var notes;
-    fs.readFile('../data/db.json', function read(err, data) {
-        if (err) {
-            throw err;
-        }
-        notes = data;
+  // ** add uuid
+  // responds to a post req for update from the client and adds data to noteData
+  // app.post('/form', (req, res) => {
+  //   const name = req.body.name
+  // })
   
-   });
   
   app.post("/api/notes", function(req, res) { 
-    if (noteData) {
-        noteData.push(req.body);
-        res.json(true);
-        }        
+
+    noteData.id = UUID.genV4();
+    // instantiate noteData
+    const newNoteData = join(noteData, noteData.id);
+    // id
+
+    // push note and id, only write newNote
+    if(newNoteData) {
+      newNoteData.push(req.body)
+      res.json(true);
+    } 
+
+    fs.writeFile('../data/db.json', function (err, data) {
+      if (err) {
+          throw err;
+      }
+      newNotesData = data;
+      });
    });
     
   app.delete('/api/notes/:id', checkNoteExists, (req, res) => {
@@ -31,4 +47,4 @@ module.exports = function(app) {
     return res.send();
     });
   }
-)}
+)} 
