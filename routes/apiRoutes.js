@@ -9,12 +9,6 @@ module.exports = function(app) {
   app.get("/api/notes", function(req, res) {
     res.json(noteData); 
 
-  // ** add uuid
-  // responds to a post req for update from the client and adds data to noteData
-  // app.post('/form', (req, res) => {
-  //   const name = req.body.name
-  // })
-  
   
   app.post("/api/notes", function(req, res) { 
 
@@ -29,7 +23,7 @@ module.exports = function(app) {
       res.json(true);
     } 
 
-    fs.writeFile('../data/db.json', function (err, data) {
+    fs.writeFileSync('../data/db.json', function (err, data) {
       if (err) {
           throw err;
       }
@@ -48,3 +42,4 @@ module.exports = function(app) {
     });
   }
 )};
+
