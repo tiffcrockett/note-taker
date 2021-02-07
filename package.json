@@ -11,6 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "uuidjs": "^4.2.7"
+    "uuid": "^8.3.2"
   }
 }

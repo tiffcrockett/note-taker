@@ -1,5 +1,5 @@
 var noteData = require("../data/db.json");
-const UUID = require("uuidjs");
+const { v4: uuidv4 } = require('uuid');
 var path = require("path");
 const fs = require("fs");
 
@@ -12,7 +12,7 @@ module.exports = function(app) {
   
   app.post("/api/notes", function(req, res) { 
 
-    noteData.id = UUID.genV4();
+    noteData.id = uuidv4;
     // instantiate noteData
     const newNoteData = join(noteData, noteData.id);
     // id
