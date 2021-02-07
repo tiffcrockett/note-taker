@@ -2,19 +2,19 @@ var noteData = require("../db/db.json");
 var uuid = require('uuid-random');
 var path = require("path");
 const fs = require("fs");
-// const { rawListeners } = require("process");
+
 
 module.exports = function(app) { 
 
-  //returns contents of noteData back to the client
   app.get("/api/notes", function(req, res) {
     res.json(noteData); 
   });
   
   app.post("/api/notes", function(req, res) { 
 
-    const newNoteData = req.body;
-    const noteFile = path.join(__dirname, "db/db.json");
+    let newNoteData = req.body;
+    const noteFile = path.join(__dirname, "../db/db.json");
+    
     noteData.id = uuid();
     noteData.push(newNoteData);
     
@@ -23,13 +23,14 @@ module.exports = function(app) {
           throw err;
             console.log('Error')
       }); 
-
-      res.send(newNotesData);
-   });
+  
+      res.send(newNoteData)
+    
+  });
     
   app.delete('/api/notes/:id', (req, res) => {
     const id = req.params.id; 
-    const noteFile = path.join(__dirname, "db/db.json");
+    const noteFile = path.join(__dirname, "../db/db.json");
 
     const noteDataIndex = noteData.findIndex(noteData => noteData.id == id); 
     noteData.splice(noteDataIndex, 1); 
@@ -43,3 +44,4 @@ module.exports = function(app) {
     return res.send();
   });
 }
+
