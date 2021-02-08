@@ -5,7 +5,15 @@
         "id": "bbc0b254476102a9"
     },
     {
-        "title": "My First Note",
-        "text": "saving a to do item in Note Taker"
+        "title": "My New Note",
+        "text": "adding text"
+    },
+    {
+        "title": "Another Note",
+        "text": "more text"
+    },
+    {
+        "title": "And yet another note",
+        "text": "enter the text here"
     }
 ]
