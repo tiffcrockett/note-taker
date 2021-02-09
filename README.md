@@ -6,7 +6,7 @@ An application to write, save, and delete notes. This application uses an expres
 
 ## Table of Contents
 * [Description](#description)
-* [Deployed Link](#deployed link)
+* [Deployed Link](#link)
 * [Contact Information](#contact)
 
 ## Deployed Link
