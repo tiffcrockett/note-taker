@@ -12,6 +12,7 @@ Most importantly, Express Note Taker is mobile friendly, making it useful for ev
 
 ## Table of Contents
 * [Description](#description)
+* [Application Images](#images)
 * [Deployed Link](#link)
 * [Contact Information](#contact) 
 
