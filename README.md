@@ -6,13 +6,13 @@ An application to write, save, and delete notes. This application uses an expres
 
 ## Table of Contents
 * [Description](#description)
-* [Installation](#installation)
+* [Deployed Link](#deployed link)
 * [Contact Information](#contact)
 
-## Installation
+## Deployed Link
 
-Run the app on Heroku: 
+Run the app on Heroku:  https://safe-harbor-26741.herokuapp.com/
 
 ## Contact 
-Feel free to contact me:
+Feel free to contact me with any comments or questions:
 crockett.tiff@gmail.com
