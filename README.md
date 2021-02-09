@@ -17,10 +17,10 @@ Most importantly, Express Note Taker is mobile friendly, making it useful for ev
 
 ## Application-Images
 
-### Desktop Screenshot
+### Home Page
 ![Screenshot of mobile webpage](https://github.com/tiffcrockett/note-taker/blob/main/note-screen2.png?)
 
-### Mobile Screenshot
+### Note Page
 ![Screenshot of mobile webpage](https://github.com/tiffcrockett/note-taker/blob/main/note-screen1.png?)
 
 
