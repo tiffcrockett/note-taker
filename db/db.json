@@ -6,14 +6,7 @@
     },
     {
         "title": "My New Note",
-        "text": "adding text"
-    },
-    {
-        "title": "Another Note",
-        "text": "more text"
-    },
-    {
-        "title": "And yet another note",
-        "text": "enter the text here"
+        "text": "Enter your data here and click the icon to save",
+        "id": "1670cccb-1b45-4905-8193-146475223179"
     }
 ]

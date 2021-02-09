@@ -1,4 +1,3 @@
-  
 var path = require("path");
 const fs = require("fs"); 
 var note = require("../db/db.json");
@@ -10,29 +9,31 @@ module.exports = app => {
     res.send(note)
   }); 
 
-  app.get("/api/notes/:id", function(req, res) {
+  app.get("/api/notes/:id", function(req, res) { 
 
+    const id = req.params.id;
     var chosen = req.params.notes;
-  
-    console.log(chosen);
+    const noteFile = path.join(__dirname, "../db/db.json");
   
     for (var i = 0; i < notes.length; i++) {
-      if (chosen === notes[i].routeName) {
+      if (chosen === notes[i]) {
         return res.send(note[i]);
       }
     }
   
-    return res.send(false);
+    return res.send();
   });
 
   app.post("/api/notes", (req, res) => { 
 
+
     let newNote = req.body;
+
     const noteFile = path.join(__dirname, "../db/db.json");
     
     note.push(newNote);
 
-    note.id = uuidv4();
+    newNote.id = uuidv4();
     
     fs.writeFile(noteFile, JSON.stringify(note, null, 4), err => {
       if (err) {
