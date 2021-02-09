@@ -18,10 +18,10 @@ Most importantly, Express Note Taker is mobile friendly, making it useful for ev
 ## Application-Images
 
 ### Desktop Screenshot
-![Screenshot of desktop webpage](https://github.com/tiffcrockett/06-Weather-Dashboard/blob/main/assets/images/Dashboard-desktop.png?)
+![Screenshot of mobile webpage](https://github.com/tiffcrockett/note-taker/blob/main/note-screen2.png?)
 
 ### Mobile Screenshot
-![Screenshot of mobile webpage](https://github.com/tiffcrockett/06-Weather-Dashboard/blob/main/assets/images/weathrscrn.png?)
+![Screenshot of mobile webpage](https://github.com/tiffcrockett/note-taker/blob/main/note-screen1.png?)
 
 
 ## Deployed Link
