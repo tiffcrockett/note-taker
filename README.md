@@ -8,7 +8,7 @@ For users that need to keep track of a lot of information, it's easy to forget o
 
 A pencil icon, when clicked, takes the user cursor to the input area to enter a note title. Note content can be quickly entered with a respoition of the cursur to the area just below the title.  After a note is written, the user clicks a file icon to save the note.  When a note is no longer needed, the use clicks a well-identified trash can icon to remove the note. Note titles and content are entered into a three-quarter size area in easy to read font and font-size.  Notes are stored in the sidebar. Stored notes are listed by note title, when the title is clicked, the input area is populated with the full note title and content for easy re-reading.
 
-Most importantly, Express Note Taker is mobile friendly, making it useful for evelyone. 
+Most importantly, Express Note Taker is mobile friendly, making it useful for every one - at home or on the go.
 
 ## Table of Contents
 * [Description](#description)
